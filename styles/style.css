@@ -68,28 +68,37 @@ section > p, section > h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
 }
 
-section input {
+section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+}
+
+section input, section a {
+    display: block;
     width: 100%;
     border-radius: 5px;
     padding: 8px;
+    text-align: center;
 }
-
 
 section input[type=text], section input[type=password] {
     border: 1px solid var(--purple);
     border-radius: 0px 5px 5px 0;
 }
 
-section input[type=submit] {
-    margin: auto;
-    margin-top: 3px;
+section input[type=submit], section a {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
     border: 1px solid var(--aquamarine);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
 }
 
-section span {
+section .input > label > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--purple);
     color: var(--white);
     padding: 5px;
@@ -103,16 +112,18 @@ section div.input {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
 }
 
+
 section #entrar {
     background-color: var(--aquamarine);
     color: var(--white);
     font-size: 0.9em;
 }
 
-section #esqueciSenha {
+section a#esqueciSenha {
     color: var(--aquamarine);
     font-size: 0.9em;
     font-weight: normal;
+    text-decoration: none;
 }
 
 section #entrar:hover, section #esqueciSenha:hover {
@@ -123,4 +134,11 @@ section #entrar:hover, section #esqueciSenha:hover {
 section #esqueciSenha:hover {
     border: 1px solid rgb(150, 150, 150);
     color: var(--white);
+}
+
+section #mailIcon {
+    padding: 0;
+    background: none;
+    color: var(--purple);
+    font-size: .9em;
 }

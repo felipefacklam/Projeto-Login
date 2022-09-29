@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
     main {
         flex-direction: row;
         display: flex;
         height: auto;
-        width: 80vw;
+        height: 45vh;
+        width: 70vw;
+        border-radius: 17px;
+    }
+    main section {
+        padding-right: 50px;
+        padding-left: 50px;
     }
     main > img {
         height: auto;
@@ -18,24 +24,75 @@
     section > p {
         font-size: 1em;
     }
+    section form {
+        height: 180px;
+        width: 250px;
+    }
+    section input, section span, section a {
+        height: 35px;
+    }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
     main {
-        flex-direction: row;
+        flex-direction: row-reverse;
         display: flex;
-        height: auto;
-        width: 80vw;
+        height: 50vh;
+        width: 70vw;
+        border-radius: 22px;
+    }
+    main section {
+        padding-right: 70px;
+        padding-left: 70px;
     }
     main > img {
         height: auto;
-        width: 45%;
-        border-radius: 15px 0 0 15px;
+        width: 55%;
+        border-radius: 0 20px 20px 0;
     }
     section > h2 {
         font-size: 2.3em;
     }
     section > p {
         font-size: 1.2em;
+    }
+    section form {
+        height: 220px;
+        width: 300px;
+    }
+    section input, section span, section a {
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) { /*TELAS GRANDES*/
+    main {
+        flex-direction: row;
+        display: flex;
+        height: 60vh;
+        width: 60vw;
+        border-radius: 27px;
+    }
+    main section {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    main > img {
+        height: auto;
+        width: 65%;
+        border-radius: 25px 0 0 25px;
+    }
+    section > h2 {
+        font-size: 2.7em;
+    }
+    section > p {
+        font-size: 1.7em;
+    }
+    section form {
+        height: 250px;
+        width: 380px;
+    }
+    section input, section span, section a {
+        height: 45px;
     }
 }
