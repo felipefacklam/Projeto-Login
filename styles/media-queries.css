@@ -1,9 +1,25 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+@media screen and (max-width: 992px) and (orientation: landscape) {
     main {
         flex-direction: row;
+        height: 95vh;
+        min-width: 400px;
+    }
+    main > img {
+        height: auto;
+        width: 30%;
+        border-radius: 15px 0 0 15px;
+    }
+    section p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+    main {
         display: flex;
+        flex-direction: row;
         height: auto;
         height: 45vh;
         width: 70vw;
@@ -19,7 +35,7 @@
         border-radius: 15px 0 0 15px;
     }
     section > h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     section > p {
         font-size: 1em;
@@ -33,11 +49,11 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*DESKTOP*/
     main {
         flex-direction: row-reverse;
         display: flex;
-        height: 50vh;
+        height: 60vh;
         width: 70vw;
         border-radius: 22px;
     }
@@ -51,10 +67,10 @@
         border-radius: 0 20px 20px 0;
     }
     section > h2 {
-        font-size: 2.3em;
+        font-size: 2.2em;
     }
     section > p {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     section form {
         height: 220px;
@@ -69,7 +85,7 @@
     main {
         flex-direction: row;
         display: flex;
-        height: 60vh;
+        height: 75vh;
         width: 60vw;
         border-radius: 27px;
     }
@@ -83,10 +99,10 @@
         border-radius: 25px 0 0 25px;
     }
     section > h2 {
-        font-size: 2.7em;
+        font-size: 2.5em;
     }
     section > p {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     section form {
         height: 250px;
